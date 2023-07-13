@@ -31,12 +31,8 @@ exports.rxMedicinShowForHrDept = async (req, res, next) => {
 
         const concateaq = [...cnewArrray, ...cnewQty]
         const result4 = [...new Set(concateaq)]
-        // console.log("new array", concateaq)
         console.log("new array", result4)
-        // console.log("cnewQty", cnewQty)
         const newV = [...new Set(result3)];
-        //console.log("newV", newV)
-        //console.log("result3", result3)
         const gid = [];
         result2.forEach(function (obj, inde) {
             const gv = Object.values(obj)
